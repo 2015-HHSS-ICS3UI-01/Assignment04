@@ -10,21 +10,20 @@ import java.util.Scanner;
  *
  * @author watsk8668
  */
-public class A4Q1 {
+public class A4Q2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //create scanner for input
+        //create scanner
         Scanner input = new Scanner(System.in);
+        int myInt;
         
-        //ask to enter name
-        System.out.println("Please enter your name:");
-        String name = input.nextLine();
-        
-        //say hello and ask how are you doing today
-        System.out.println("Hello " + name + ". How are you today?");
-        
+        //convert inches to cm
+         System.out.println("Please enter the measurement in inches you wish to convert:");
+         double inches = input.nextInt();
+         
+         System.out.println(inches*2.54);
     }
 }
