@@ -17,8 +17,10 @@ public class Question04 {
      */
     public static void main(String[] args) {
         
+        //make new scanner
         Scanner input = new Scanner(System.in);
 
+        //ask users different prices
         System.out.print("How much does the food for prom cost?: ");
         double foodCost = input.nextDouble();
         
@@ -37,11 +39,15 @@ public class Question04 {
         System.out.print("How much for miscellaneous costs?: ");
         double otherCosts = input.nextDouble();
         
+        //total cost
         double totalCost = foodCost + djCost + hallCost + decorationCost + staffCost + otherCosts;
+        //price of tickets
         int ticketCost = 35;
+        //number of tickets needed
         double totalTickets = totalCost / ticketCost;
-        
-        System.out.println("The total cost is $" + totalCost + " and you would need to sell " + totalTickets);
-
+       
+        //tells user the total amount of money and hpw many tickets they need to sell
+        System.out.println();
+        System.out.println("The total cost is $" + totalCost + ". You would need to sell about " + totalTickets + "tickets.");
     }
 }
