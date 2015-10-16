@@ -19,34 +19,29 @@ public class Question4 {
         // TODO code application logic here
         // new scanner
         Scanner input = new Scanner(System.in);
-        int prom;
-        int dj;
-        int rent;
-        int decoration;
-        int staff;
-        int miscellaneous;
+        
         
      // Bunch of questions asked, and costs being stored
         System.out.println("How much does the food for prom cost?");
-        prom = input.nextInt();
+        double prom = input.nextDouble();
         
         System.out.println("How much does the DJ cost?");
-        dj = input.nextInt();
+        double dj = input.nextDouble();
         
         System.out.println("How much does it cost to rent the hall?");
-        rent = input.nextInt();
+        double rent = input.nextDouble();
         
         System.out.println("How much does decorations cost?");
-        decoration = input.nextInt();
+        double decoration = input.nextDouble();
         
         System.out.println("How much does it cost for staff?");
-        staff = input.nextInt();
+        double staff = input.nextDouble();
         
         System.out.println("How much for miscellaneous costs?");
-        miscellaneous = input.nextInt();
+        double miscellaneous = input.nextDouble();
         
-        // Adding all numbers together and making it into one int
-        int total = (prom + dj + rent + decoration + staff + miscellaneous);
+        // Adding all numbers together to give result
+        double total = (prom + dj + rent + decoration + staff + miscellaneous);
         
         System.out.println("The total cost is $" + total + ". You will need to sell " + (total/35) + " tickets to break even.");
         
