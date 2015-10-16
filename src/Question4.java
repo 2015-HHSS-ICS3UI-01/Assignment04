@@ -37,8 +37,8 @@ public class Question4 {
         System.out.println("The total cost is " + total);
 
         //Calculate breakeven point
-        int ticket = 35;
-        int breakeven = total / ticket;
+        double ticket = 35;
+        double breakeven = Math.ceil(total / ticket);
         System.out.println("You will need to sell " + breakeven + " tickets to break even.");
     }
 }
