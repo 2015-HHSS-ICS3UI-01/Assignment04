@@ -27,5 +27,35 @@ public class Question6 {
         
         System.out.println("Number of weekend minutes?");
         int weekend = in.nextInt();
+        
+            
+       if(daytime <= 100){
+           System.out.println("Plan A costs " +(evening*0.15) + (weekend*0.20));
+           double planA = in.nextInt();
+       }else
+            System.out.println("Plan A costs  " +(daytime-100)*0.25 + (evening*0.15) + (weekend*0.20));
+       double planA = in.nextInt();
+    if(daytime < 250){
+            System.out.println("Plan B costs "  );
+      
+            
+        
+        double planA = ((daytime-100)*0.25 + (evening*0.15) + (weekend*0.20));
+        
+        
+        double planB = ((daytime-250)*0.45 + (evening*0.35) + (weekend*0.25));
+        
+        
+        System.out.println("Plan A costs "+ planA);
+        System.out.println("Plan B costs " + planB);
+        
+        if(planA > planB){
+            System.out.println("Plan B is cheapest.");
+        }else if(planA < planB){
+            System.out.println("Plan A is cheapest");
+        }if(planA == planB){
+            System.out.println("Plan A and B are the same price.");
+        }
     }
 }
+
