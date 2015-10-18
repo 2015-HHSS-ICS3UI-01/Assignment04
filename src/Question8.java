@@ -19,12 +19,22 @@ public class Question8 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
+       int sum;
+       
+        System.out.println("Enter sum of dice ");
+        sum = in.nextInt();
         
-        while(true){
+        System.out.println("You are now on square "+ ( sum + 1));
+        int summ = in.nextInt();
+       
+        
+        while(summ <= 100){
             System.out.println("Enter sum of dice ");
-            int sum = in.nextInt();
+             sum = in.nextInt();
             
-            System.out.println("You are now on square " + sum + );
+            System.out.println("You are now on square " +( sum + summ));
+            summ = in.nextInt();
+            
             
             
         }
