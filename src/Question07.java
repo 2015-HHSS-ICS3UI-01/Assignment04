@@ -33,7 +33,7 @@ public class Question07 {
         //checks how much they are speeding by
         int speedOver = carSpeed - speedLimit;
 
-        //check if under speed limit by 15km/h
+        //check if under speed limit by 15km/h or more
         if (speedOver < -15) {
             System.out.println("Speed up, you might be causing traffic!");
         } //check if in the speed limit
