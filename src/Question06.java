@@ -55,6 +55,8 @@ public class Question06 {
         System.out.println("Plan A costs: $" + planA);
         System.out.println("Plan B costs: $" + planB);
 
+        //Math.ceil(planA);
+        //Math.floor(planA);
         //tells user which plan would be cheaper
         if (planA < planB) {
             System.out.println("Plan A is the cheapest.");

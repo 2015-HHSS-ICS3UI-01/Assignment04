@@ -37,7 +37,7 @@ public class Question07 {
         if (speedOver < -15) {
             System.out.println("Speed up, you might be causing traffic!");
         } //check if in the speed limit
-        else if (carSpeed < speedLimit && speedOver < -14) {
+        else if (carSpeed < speedLimit && speedOver > -14) {
             System.out.println("Congratulations, you are within the speed limit!");
         } //checks if cars speed is more than speed limit
         else if (carSpeed > speedLimit) {

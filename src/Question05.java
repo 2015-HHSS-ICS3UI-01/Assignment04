@@ -25,6 +25,7 @@ public class Question05 {
         System.out.print("Please enter your name: ");
         userName = input.next();
         System.out.println();
+        
         //ask user for what test is out of and marks
         System.out.print("What was the first test out of?: ");
         double firstTest = input.nextInt();
@@ -71,6 +72,14 @@ public class Question05 {
 
         double fifthPercent = fifthMark / fifthTest * 100;
 
+        Math.ceil(firstMark);
+        Math.ceil(secondMark);
+        Math.floor(thirdMark);
+        Math.ceil(fourthMark);
+        Math.ceil(fifthMark);
+        
+        
+        
         //shows user test percentage
         System.out.println("Test 1: " + firstPercent + "%");
         System.out.println("Test 2: " + secondPercent + "%");
@@ -79,7 +88,7 @@ public class Question05 {
         System.out.println("Test 5: " + fifthPercent + "%");
         System.out.println();
 
-        //calculate average
+        //calculates average
         double total = firstPercent + secondPercent + thirdPercent + fourthPercent + fifthPercent;
         double average = total / 5;
 
