@@ -20,9 +20,12 @@ public class Question4 {
         //create an input scanner
         Scanner input = new Scanner (System.in);
         //ask how much food costs
+        System.out.println("Tickets cost $35.");
         System.out.println("The program will ask various expenses in dollar amounts.");
         System.out.println("Enter all answers below the question.");
         System.out.println("How much does food cost (in dollars)?");
+        
+        
         
         double foodCost = input.nextDouble();
         
