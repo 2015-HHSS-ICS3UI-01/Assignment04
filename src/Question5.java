@@ -25,52 +25,52 @@ public class Question5 {
         Scanner input = new Scanner(System.in);
         
         // ask what the usuer's name is
-        System.out.print("Please enter your name:");
+        System.out.print("Please enter your name: ");
         // enter the name of the user
         String name = input.nextLine();
         
         // ask what the first test was out of
-        System.out.print("What was the first test out of?:");
+        System.out.print("What was the first test out of?: ");
         // collect what the test was out of
         double testOneOutOf = input.nextDouble();
         // ask what the mark the user got
-        System.out.print("What mark did you get?:");
+        System.out.print("What mark did you get?: ");
         // collect what the user got on the test
         double testOneMark = input.nextDouble();
         
         // ask what the second test was out of
-        System.out.print("What was the second test out of?:");
+        System.out.print("What was the second test out of?: ");
         // colect what the test was out of
         double testTwoOutOf = input.nextDouble();
         // ask what the mark the user got
-        System.out.print("What mark did you get?:");
+        System.out.print("What mark did you get?: ");
         // collect what the user got on the test
         double testTwoMark = input.nextDouble();
         
         // ask what the third test was out of
-        System.out.print("What was the third test out of?:");
+        System.out.print("What was the third test out of?: ");
         // collect what the test was out of
         double testThreeOutOf = input.nextDouble();
         // ask what the mark the user got
-        System.out.print("What mark did you get?:");
+        System.out.print("What mark did you get?: ");
         // collect what the user got on the test
         double testThreeMark = input.nextDouble();
         
         // ask what the fourth test was out of
-        System.out.print("What was the fourth test out of?:");
+        System.out.print("What was the fourth test out of?: ");
         // colect what the test was out of
         double testFourOutOf = input.nextDouble();
         // ask what the mark the user got
-        System.out.print("What mark did you get?:");
+        System.out.print("What mark did you get?: ");
         // collect what the user got on the test
         double testFourMark = input.nextDouble();
         
         // ask what the fifth test was out of
-        System.out.print("What was the fifth test out of?:");
+        System.out.print("What was the fifth test out of?: ");
         // collect what the test was out of
         double testFiveOutOf = input.nextDouble();
         // ask what the mark the user got
-        System.out.print("What mark did you get?:");
+        System.out.print("What mark did you get?: ");
         // collect what the user got on the test
         double testFiveMark = input.nextDouble();
         
@@ -80,32 +80,32 @@ public class Question5 {
         // determine the percentage on the first test
         double testOneTotal = testOneMark / testOneOutOf * 100.0;
         // display the percentage of test 1
-        System.out.println("Test 1: " + testOneTotal + "%");
+        System.out.println("Test 1: " + testOneTotal + " %");
         
         // determine the percentage on the second test
         double testTwoTotal = testTwoMark / testTwoOutOf * 100.0;
         // display the percentage of test 2
-        System.out.println("Test 2: " + testTwoTotal + "%");
+        System.out.println("Test 2: " + testTwoTotal + " %");
         
         // determine the percentage on the third test
         double testThreeTotal = testThreeMark / testThreeOutOf * 100.0;
         // display the percentage of test 3
-        System.out.println("Test 3: " + testThreeTotal + "%");
+        System.out.println("Test 3: " + testThreeTotal + " %");
         
         // determine the percentage on the fourth test
         double testFourTotal = testFourMark / testFourOutOf * 100.0;
         // display the percentage of test 4
-        System.out.println("Test 4: " + testFourTotal + "%");
+        System.out.println("Test 4: " + testFourTotal + " %");
         
         // determine the percentage on the fifth test
         double testFiveTotal = testFiveMark / testFiveOutOf * 100.0;
         // display the percentage of test 5
-        System.out.println("Test 5: " + testFiveTotal + "%");
+        System.out.println("Test 5: " + testFiveTotal + " %");
         
         // determine the average of the user
         double average = (testOneTotal + testTwoTotal + testThreeTotal + testFourTotal + testFiveTotal) / 5.0;
         // display the average of the user
-        System.out.println("Average: " + average + "%");
+        System.out.println("Average: " + average + " %");
         
         // close input scanner
         input.close();

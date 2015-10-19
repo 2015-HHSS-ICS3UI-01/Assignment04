@@ -25,7 +25,7 @@ public class Question1 {
         Scanner input = new Scanner(System.in);
         
         // get users name by asking them to type it in
-        System.out.print("Please enter your name:");
+        System.out.print("Please enter your name: ");
         // enter name on this line
         String name = input.nextLine();
         

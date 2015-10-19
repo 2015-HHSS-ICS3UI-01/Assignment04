@@ -25,17 +25,17 @@ public class Question6 {
         Scanner input = new Scanner(System.in);
         
         // ask the number of daytime minutes
-        System.out.println("Number of daytime minutes? ");
+        System.out.print("Number of daytime minutes? ");
         // collect the number of daytime minutes
         double callingDaytime = input.nextDouble();
         
         // ask the number of evening minutes
-        System.out.println("Number of evening minutes? ");
+        System.out.print("Number of evening minutes? ");
         // collect the numbner of evening minutes
         double callingEvening = input.nextDouble();
         
         // ask the number of weekend minutes
-        System.out.println("Number of weekend minutes? ");
+        System.out.print("Number of weekend minutes? ");
         // collect the number of weekend minutes
         double callingWeekend = input.nextDouble();
         
@@ -56,6 +56,8 @@ public class Question6 {
         double planAWeekend = callingWeekend * 0.20;
         // determine the total cost of plan a
         double planATotal = planADaytime + planAEvening + planAWeekend;
+        // round the plan A total to two decimal places
+        planATotal = Math.round(planATotal * 100) / 100.0;
         // display the total cost of plan a
         System.out.println("Plan A costs " + planATotal);
         
@@ -76,6 +78,8 @@ public class Question6 {
         double planBWeekend = callingWeekend * 0.25;
         // determine the total cost of plan b
         double planBTotal = planBDaytime + planBEvening + planBWeekend;
+        // round the plan B total to two decimal places
+        planBTotal = Math.round(planBTotal * 100) / 100.0;
         // display the total cost of plan b
         System.out.println("Plan B costs " + planBTotal);
         

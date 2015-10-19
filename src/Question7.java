@@ -58,7 +58,7 @@ public class Question7 {
                 fine = 500.0;
             }
             // display the outcome which is the amount of the fine
-            System.out.println("You are speeding a your fine is $" + fine);
+            System.out.println("You are speeding a your fine is $" + fine + ".");
         // if the speed of the car is within the speed limit than tell the driver they are within the limit
         } else {
             // display the outcome which is that they are within the limit
