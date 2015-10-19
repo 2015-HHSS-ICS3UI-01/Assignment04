@@ -31,7 +31,7 @@ public class Question1 {
        
        
        //out put greeting message as well as name
-       System.out.println("Hello how are you today " + name);
+       System.out.println("Hello how are you today " + name + " ?");
         
         
 

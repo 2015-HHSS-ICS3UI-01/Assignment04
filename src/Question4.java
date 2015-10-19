@@ -22,36 +22,36 @@ public class Question4 {
          
         System.out.println("How much does the food for prom cost?");
         
-        double food =input.nextInt();
+        double food =input.nextDouble();
         
         //ask user how much the dj cost 
         System.out.println("How much does the DJ cost? ");
         
         //user enters dj price 
-       double dj= input.nextInt();
+       double dj= input.nextDouble();
        
        //ask user hall price 
         System.out.println("How much does it cost to rent the hall?");
         
         //user enters hall price 
-        double hall=input.nextInt();
+        double hall=input.nextDouble();
         //ask user for decoration price 
         System.out.println("How much does decorations cost? ");
         //user enters decoration price 
-        double decoration=input.nextInt();
+        double decoration=input.nextDouble();
         //ask user for 
         System.out.println("How much does it cost for staff? ");
         
-        double staff= input.nextInt();
+        double staff= input.nextDouble();
         
         System.out.println("How much for miscellaneous costs");
         
-        double miscellaneous=input.nextInt();
+        double miscellaneous=input.nextDouble();
         
         double total = dj+hall+decoration+staff+miscellaneous;
         
         double amount=total/35;
         
-        System.out.println("The total cost is " +total+" you will need to sell "+ amount + " 7to break even");
+        System.out.println("The total cost is " +total+" you will need to sell "+ amount + " to break even");
     }
 }
