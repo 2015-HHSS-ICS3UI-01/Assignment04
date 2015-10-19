@@ -23,7 +23,7 @@ public class Question2 {
         Scanner input = new Scanner(System.in);
         
         // first ask the measurements that you want to convert
-        System.out.println("Please enter the measurement in inches you wish to convert:");
+        System.out.print("Please enter the measurement in inches you wish to convert:");
         
         // collecting user measurement in inches
         double inchesMeasurement = input.nextDouble();
@@ -33,6 +33,9 @@ public class Question2 {
         
         // displaying the converted measurement
         System.out.println(inchesMeasurement + " inches is the same as " + cmMeasurement + " cm");
+        
+        // close input scanner
+        input.close();
     }
     
 }

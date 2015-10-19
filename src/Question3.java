@@ -33,5 +33,8 @@ public class Question3 {
         // display the numbers on a line together
         System.out.println("Your numbers were " + numberOne + ", " 
                 + numberTwo + ", " + numberThree + ", and " + numberFour);
+        
+        // close input scanner
+        input.close();
     }
 }
