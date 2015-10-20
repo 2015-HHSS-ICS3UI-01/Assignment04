@@ -34,17 +34,20 @@ public class A4Q7 {
         //determine the difference between the speed limit and the car's speed
         int difference = speed - speedLimit;
         
-        //determiner the fines
+        //tell user if they are speeding or not
         
-        if (difference < 0){
+        if (difference <= 0){
             System.out.println("Congradulations, you are within the speed limit! ");
         
         
         }else if (difference > 0){
+            
             if (difference >=1 && difference <=20){
                 System.out.println("You are speeding and your fine is $100.");
+                
             }else if (difference >=21 && difference <=30){
                 System.out.println("You are speeding and your fine is $270");
+                
             }else{
                 System.out.println("You are speeding and your fine is $500");
             }
