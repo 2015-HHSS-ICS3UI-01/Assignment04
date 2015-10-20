@@ -45,9 +45,12 @@ public class Question6 {
                 
             }    
         
+            
+        planB = Math.round(planB*100)/100.0;
+        planA = Math.round(planA*100)/100.0;
         System.out.println("Plan A costs "+ planA);
         System.out.println("Plan B costs " + planB);
-        planB = Math.round(planB*100)/100.0;
+
             
         
         // This is analyzes comparison between both plans

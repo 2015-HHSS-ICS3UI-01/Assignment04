@@ -19,21 +19,44 @@ public class Question8 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
-       int sum;
+       int spot = 1;
        
-        System.out.println("Enter sum of dice ");
-        sum = in.nextInt();
-        
-        System.out.println("You are now on square "+ ( sum + 1));
-        int summ = in.nextInt();
-       
-        
-        while(summ <= 100){
+        while(spot <= 100){
             System.out.println("Enter sum of dice ");
-             sum = in.nextInt();
+             int sum = in.nextInt();
             
-            System.out.println("You are now on square " +( sum + summ));
-            summ = in.nextInt();
+            
+            spot = sum + spot;
+            System.out.println("You are now on square " +(spot));
+            
+            if (sum == 0){
+                System.out.println("You Quit!");
+                break;
+            }if (spot == 9){
+                System.out.println("You are now on square " + 34 );
+                spot = spot + 25;
+            }if (spot == 54){
+                System.out.println("You are now on square "+ 19 );
+                spot = spot - 35;
+            }if (spot == 40){
+                System.out.println("You are now on square " + 64);
+                spot = spot + 24;
+            }if (spot == 67){
+                System.out.println("You are now on square " + 86);
+                spot = spot + 19;
+            }if (spot == 90){
+                System.out.println("You are now on square " +48);
+                spot = spot - 42;
+            }if (spot == 99){
+                System.out.println("You are now on square " + 77);
+                spot = spot - 22;
+            }if (spot == 100){
+                System.out.println("You are now on square " + 100);
+                System.out.println("You Win!");
+                break;
+            }if (spot > 100){
+                System.out.println("You Win!");
+            }
             
             
             
