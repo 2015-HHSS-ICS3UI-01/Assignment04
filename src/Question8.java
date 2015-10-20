@@ -57,26 +57,38 @@ public class Question8 {
             }
             //if space is equal to 9, the following commands will be executed
             if (space == 9) {
+                //makes the computer display the following on the screen
+                System.out.println("You climbed a ladder to space 34!");
                 space = 34;
             }
             //if space is equal to 40, the following commands will be executed
             if (space == 40) {
+                //makes the computer display the following on the screen
+                System.out.println("You climbed a ladder to space 64!");
                 space = 64;
             }
             //if space is equal to 67, the following commands will be executed
             if (space == 67) {
+                //makes the computer display the following on the screen
+                System.out.println("You climbed a ladder to space 86!");
                 space = 86;
             }
             //if space is equal to 54, the following commands will be executed
             if (space == 54) {
+                //makes the computer display the following on the screen
+                System.out.println("You hit a snake and went back to space 19!");
                 space = 19;
             }
             //if space is equal to 90, the following commands will be executed
             if (space == 90) {
+                //makes the computer display the following on the screen
+                System.out.println("You hit a snake and went back to space 48!");
                 space = 48;
             }
             //if space is equal to 99, the following commands will be executed
             if (space == 99) {
+                //makes the computer display the following on the screen
+                System.out.println("You hit a snake and went back to space 77!");
                 space = 77;
             }
             //if space is equal to 100, the following commands will be executed
