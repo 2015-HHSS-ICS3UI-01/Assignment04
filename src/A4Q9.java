@@ -22,7 +22,7 @@ public class A4Q9 {
    
    //declars player starts on 1
    int player = 1;
-   int player2 =2;
+   int player2 =1;
    
    System.out.println("Hello. type the number 0 to quit");
    
