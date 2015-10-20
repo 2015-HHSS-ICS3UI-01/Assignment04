@@ -33,6 +33,11 @@ public class A4Q9 {
        //user inputs the sum of dice
        int di = input.nextInt();
        //if the number is less then 0 then it will ask you to roll again
+      while(di ==1){
+           
+           System.out.println("please use a number between 2-12");
+           di = input.nextInt();
+       } 
        while(di <0){
            System.out.println("please use a number between 1-12. Roll again");
            di = input.nextInt();
@@ -110,6 +115,11 @@ public class A4Q9 {
      System.out.println("enter sum of dice player two");
        //user inputs the sum of dice
        int di2 = input.nextInt();
+       while(di2 ==1){
+           
+           System.out.println("please use a number between 2-12");
+           di2 = input.nextInt();
+       } 
        //if the number is less then 0 then it will ask you to roll again
        while(di2 <0){
            System.out.println("please use a number between 1-12. Roll again");

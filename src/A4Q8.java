@@ -38,7 +38,13 @@ public class A4Q8 {
            di = input.nextInt();
            
        } 
+       while(di ==1){
+           
+           System.out.println("please use a number between 2-12");
+           di = input.nextInt();
+       } 
        //if the imputted number is more then 12 it will ask them to roll again
+      
        while(di >12){
            
            System.out.println("please use a number between 2-12");
