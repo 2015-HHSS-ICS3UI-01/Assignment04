@@ -80,10 +80,10 @@ public class A4Q5 {
         System.out.println("Test 4: " + p4);
         
         //determine average       
-        double av = (t1+t2+t3+t4)/4;
+        double av = (p1+p2+p3+p4)/4;
         
         //tell user average
-        System.out.println("Your average is" + av);
+        System.out.println("Your average is " + av);
         
         //close scanner
         input.close();

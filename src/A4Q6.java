@@ -39,7 +39,7 @@ public class A4Q6 {
         
         //calculate cost of plan A
             //daytime
-            double dca = (dm - 100)*(dm * 0.25);
+            double dca = (dm - 100)*0.25;
             
             //evening
             double eca = (em * 0.15);
@@ -52,7 +52,7 @@ public class A4Q6 {
             
          //calculate cost of plan B
             //daytime
-            double dcb = (dm - 250)*(dm * 0.45);
+            double dcb = (dm - 250)* 0.45;
             
             //evening
             double ecb = em * 0.35;
