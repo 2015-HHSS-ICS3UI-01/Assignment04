@@ -28,7 +28,7 @@ public class A4Q8 {
    
    //will loop forever
    while(true){
-        System.out.println("player one's turn");
+        
        System.out.println("enter sum of dice");
        //user inputs the sum of dice
        int di = input.nextInt();
@@ -41,7 +41,7 @@ public class A4Q8 {
        //if the imputted number is more then 12 it will ask them to roll again
        while(di >12){
            
-           System.out.println("please use a number between 1-12");
+           System.out.println("please use a number between 2-12");
            di = input.nextInt();
        } 
        
