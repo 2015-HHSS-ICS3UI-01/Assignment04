@@ -71,14 +71,6 @@ public class Question05 {
         double fourthPercent = fourthMark / fourthTest * 100;
 
         double fifthPercent = fifthMark / fifthTest * 100;
-
-        Math.ceil(firstMark);
-        Math.ceil(secondMark);
-        Math.floor(thirdMark);
-        Math.ceil(fourthMark);
-        Math.ceil(fifthMark);
-        
-        
         
         //shows user test percentage
         System.out.println("Test 1: " + firstPercent + "%");
