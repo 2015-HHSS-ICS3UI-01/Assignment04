@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author bettk6516
+ * @author Kyler
  */
-public class A4Q8 {
+public class A4Q9 {
 
     /**
      * @param args the command line arguments
@@ -86,7 +86,7 @@ public class A4Q8 {
         }
         //if player lands on 100 they win and the game ends
         if(player == 100){
-            System.out.println("you Win!");
+            System.out.println("you Win player One!");
             break;
         }
         //if player goes over 100 it will subtract their last dice roll from their location
@@ -102,7 +102,78 @@ public class A4Q8 {
         
         
         
+        //player two's code
         
+        
+        
+        System.out.println("player two's turn");
+     System.out.println("enter sum of dice player two");
+       //user inputs the sum of dice
+       int di2 = input.nextInt();
+       //if the number is less then 0 then it will ask you to roll again
+       while(di2 <0){
+           System.out.println("please use a number between 1-12. Roll again");
+           di2 = input.nextInt();
+           
+       } 
+       //if the imputted number is more then 12 it will ask them to roll again
+       while(di2 >12){
+           System.out.println("please use a number between 1-12");
+           di2 = input.nextInt();
+       } 
+       
+       //if the number enterd is 0 the game will quit
+        if(di2 == 0 ){
+           System.out.println("you Quitter!");
+           break;
+       }
+        
+        //adds dice roll to players current location
+        player2 = player2 + di;
+        
+        //ladder
+        if(player2 == 9){
+            player2 = 34;
+            System.out.println("you went up a ladder");
+        }
+    //ladder
+        if(player2 == 40){
+            player2 = 64;
+            System.out.println("you went up a ladder");
+        }
+        //snake
+        if(player2 == 54){
+            player2 = 19;
+            System.out.println("Awe! you fell down a snake");
+        }
+        //snake
+        if(player2 == 67){
+            player2 = 86;
+            System.out.println("you wnet up a ladder");
+        }
+        //snake
+        if(player2 == 90){
+            player2 = 48;
+            System.out.println("awe! you fell down a snake");
+        }
+        //snake
+        if(player2 ==99){
+        player2 = 77;
+            System.out.println("awe! soo close to the end too bad");
+        }
+        //if player lands on 100 they win and the game ends
+        if(player2 == 100){
+            System.out.println("you Win player two!");
+            break;
+        }
+        //if player goes over 100 it will subtract their last dice roll from their location
+        if(player2 >100){
+            player2 = player2 - di;
+        }
+        
+        System.out.println("player two you are now on squre " + player2);
+    
+    
    } 
     }
     
