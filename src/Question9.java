@@ -42,6 +42,7 @@ public class Question9 {
 //if diceroll is less than or equal to 13, the following commands will be executed
             if (diceroll >= 13) {
                 //makes the computer display "You Quit! Player 2 Wins!"s!");
+                System.out.println("You Quit! Player 2 Wins!");
                 //breaks the program out of the while loop
                 break;
             }
