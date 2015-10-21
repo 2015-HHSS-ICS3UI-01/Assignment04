@@ -111,32 +111,32 @@ public class Question5 {
         System.out.println("");
         //make a space
         
-        System.out.printf("Test one score: %.2f ",testOneMark);
+        System.out.printf("Test one score: %.2f %%",testOneMark);
         //output test one mark
         
         System.out.println("");
         //make a space
         
-        System.out.printf("Test two score: %.2f ",testTwoMark);
+        System.out.printf("Test two score: %.2f %%",testTwoMark);
         //output test two mark
         
         System.out.println("");
         //make a space
         
-        System.out.printf("Test three score: %.2f ",testThreeMark);
+        System.out.printf("Test three score: %.2f %%",testThreeMark);
         //output test three mark
         
         System.out.println("");
         //make a space
         
-        System.out.printf("Test four score: %.2f ",testFourMark);
+        System.out.printf("Test four score: %.2f %%",testFourMark);
         //output test four mark
         
         System.out.println("");
         //make a space
         
-        System.out.printf("Test five score: %.2f %",testFiveMark);
-        //output test five mark
+        System.out.printf("Test five score: %.2f %%",testFiveMark);
+        //output test five marka
         
         System.out.println("");
         //make a space
@@ -144,7 +144,7 @@ public class Question5 {
         System.out.println("");
         //make a space
         
-        System.out.printf("The total average of "+userName+"'s test scores: %.2f ",totalAverage);
+        System.out.printf("The total average of "+userName+"'s test scores: %.2f %%",totalAverage);
         //output the total average for the user
         
         System.out.println("");
