@@ -21,15 +21,26 @@ public class A4Q8 {
         
         //make variable for spaces moved
         int spaces = 1;
-   
         while (spaces <= 100){
         //start moves
         System.out.println("Enter sum of dice. ");
         int sum = input.nextInt();
-        
-        spaces = spaces + sum;
-        
-            System.out.println("You are now on " + spaces);
-        
-    }
+            if (sum >=2 && sum <=12){
+                spaces = spaces + sum;
+                System.out.println("You are now on " + spaces);
+                    if (spaces == 9){
+                        System.out.println("You hit a ladder!");
+                        spaces = 34;
+                    }if (spaces == 40){
+                        System.out.println("You hit a ladder!");
+                        spaces = 64;
+                    }
+            }else if (sum == 0){
+            System.out.println("You quit!");
+            break;
+        }
+                
+        }if (spaces >= 100){
+            System.out.println("You win!");
+        }  
 }}
