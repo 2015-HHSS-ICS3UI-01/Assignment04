@@ -28,76 +28,82 @@ public class Question08 {
         System.out.println("Enter 0 at anytime to quit the game.");
 
         int position = 0;
-        
+
         while (true) {
             //user enters sum of dice
             System.out.print("Enter the sum of the dice: ");
             int firstNumber = input.nextInt();
-            
-            if(firstNumber == 0){
+
+            if (firstNumber == 0) {
                 System.out.println("You Quit!");
-                break;              
-            }else if(firstNumber > 12 || firstNumber ==1){
+                break;
+            } else if (firstNumber > 12 || firstNumber == 1) {
                 System.out.println("Please enter a number between 2 and 12");
-            }else{
-                position = position + firstNumber;
-            }
-            if(position == 100){
+            } else if (position == 100) {
                 System.out.println("Congratulations, YOU WIN!!");
                 break;
-            }while(position + firstNumber > 100){
-                System.out.println("Try Again!");
-                System.out.print("Enter the sum of the dice: ");
-                firstNumber = input.nextInt();
+            } else {
+                position = position + firstNumber;
             }
-          
+            
+           
+            /*
+             while (position + firstNumber > 101) {
+             //position = position - firstNumber;
+             System.out.println("Try Again!");
+             System.out.println("You are now on square " + position);
+             System.out.print("Enter the sum of the dice: ");
+             firstNumber = input.nextInt();
+             }
+             */
             //ladders 
             int firstLadder = 9 + 25;
             int secondLadder = 40 + 24;
-            int thirdLadder  = 67 + 19;
-            
+            int thirdLadder = 67 + 19;
+
             //snakes
             int firstSnake = 54 - 35;
             int secondSnake = 90 - 42;
             int thirdSnake = 99 - 22;
-            
+
             //user goes up the ladders
-            if(position == 9){
-                System.out.println("You are at the bottom of the ladder and you climb up to square " 
+            if (position == 9) {
+                System.out.println("You are at the bottom of the ladder and you climb up to square "
                         + firstLadder + "!");
+                position = firstLadder;
             }
-            if(position == 40){
-                System.out.println("You are at the bottom of the ladder and you climb up to square " 
+            if (position == 40) {
+                System.out.println("You are at the bottom of the ladder and you climb up to square "
                         + secondLadder + "!");
+                position = secondLadder;
             }
-            if(position == 67){
-                System.out.println("You are at the bottom of the ladder and you climb up to square " 
+            if (position == 67) {
+                System.out.println("You are at the bottom of the ladder and you climb up to square "
                         + thirdLadder + "!");
+                position = thirdLadder;
             }
             //user slides down the snakes
-            if(position == 54){
-                System.out.println("You have landed on top of a snake and you slide down to square " 
+            if (position == 54) {
+                System.out.println("You have landed on top of a snake and you slide down to square "
                         + firstSnake + "!");
+                position = firstSnake;
             }
-            if(position == 90){
-                System.out.println("You have landed on top of a snake and you slide down to square " 
+            if (position == 90) {
+                System.out.println("You have landed on top of a snake and you slide down to square "
                         + secondSnake + "!");
+                position = secondSnake;
             }
-            if(position == 99){
-                System.out.println("You have landed on top of a snake and you slide down to square " 
+            if (position == 99) {
+                System.out.println("You have landed on top of a snake and you slide down to square "
                         + thirdSnake + "!");
+                position = thirdSnake;
             }
-      
+
             //tells which square the user is on
-            System.out.println("You are now on square " + position);          
-            
-            
-            
+            System.out.println("You are now on square " + position);
+ 
             
         }
-
-
-
 
     }
 }
