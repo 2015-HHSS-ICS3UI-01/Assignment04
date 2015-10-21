@@ -83,7 +83,7 @@ public class Question9 {
                     break;
                     //if the user is on space 100 output "you win!" and terminate
                 }
-            }
+            
             while(true){
             if(currentPlayer == 1){
                 currentPlayer = 2;
@@ -94,6 +94,7 @@ public class Question9 {
                 currentPlayer = 1;
                 break;
                 //if the current player is 2 switch to player 1
+            }
             }
             }
         }
