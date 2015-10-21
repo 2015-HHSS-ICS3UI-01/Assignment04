@@ -33,29 +33,17 @@ public class Question08 {
             //user enters sum of dice
             System.out.print("Enter the sum of the dice: ");
             int firstNumber = input.nextInt();
-
+            //if user enters 0 the they quit
             if (firstNumber == 0) {
                 System.out.println("You Quit!");
                 break;
-            } else if (firstNumber > 12 || firstNumber == 1) {
+            }//if user doesnt enter a number between 2 and 12 
+            else if (firstNumber > 12 || firstNumber == 1) {
                 System.out.println("Please enter a number between 2 and 12");
-            } else if (position == 100) {
-                System.out.println("Congratulations, YOU WIN!!");
-                break;
-            } else {
+            }//adds position and first number 
+            else {
                 position = position + firstNumber;
             }
-            
-           
-            /*
-             while (position + firstNumber > 101) {
-             //position = position - firstNumber;
-             System.out.println("Try Again!");
-             System.out.println("You are now on square " + position);
-             System.out.print("Enter the sum of the dice: ");
-             firstNumber = input.nextInt();
-             }
-             */
             //ladders 
             int firstLadder = 9 + 25;
             int secondLadder = 40 + 24;
@@ -98,12 +86,19 @@ public class Question08 {
                         + thirdSnake + "!");
                 position = thirdSnake;
             }
-
-            //tells which square the user is on
-            System.out.println("You are now on square " + position);
- 
-            
+            //if position is over 100 than try again
+            while (position >= 101) {
+                position = position - firstNumber;
+                System.out.println("Try Again!");
+            }
+            //position equals 100 then user wins
+            if (position == 100) {
+                System.out.println("Congratulations, YOU WIN!!");
+                break;
+            } else {
+                //tells which square the user is on
+                System.out.println("You are now on square " + position);
+            }
         }
-
     }
 }
