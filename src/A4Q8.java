@@ -21,9 +21,10 @@ public class A4Q8 {
         
         //make variable for spaces moved
         int spaces = 1;
-        while (spaces <= 100){
-            
+        
         //start rolls
+        while (spaces <= 100){
+       
         System.out.println("Enter sum of dice. ");
         int sum = input.nextInt();
         
