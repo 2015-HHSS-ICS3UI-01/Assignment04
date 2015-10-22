@@ -18,12 +18,13 @@ public class Question5 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
+      
         //Ask for users name
         System.out.println("Please enter your name.");
         String name = input.nextLine();
         System.out.println();
         
-        //Ask for test scores
+        //Ask for test marks+what the test was out of
         System.out.println("What was the first test out of?");
         int test1 = input.nextInt();
         System.out.println("What mark did you get?");

@@ -17,7 +17,6 @@ public class Question1 {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println();
         
         // Get the users name
         System.out.println("Please enter your name.");

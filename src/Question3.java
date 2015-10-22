@@ -24,6 +24,8 @@ public class Question3 {
         double two = input.nextDouble();
         double three = input.nextDouble();
         double four = input.nextDouble();
+        
+        //Tell user the four numbers
         System.out.println("Your numbers were " +one+ ", " +two+ ", " +three+ ", " +four+ ".");
     }
 }

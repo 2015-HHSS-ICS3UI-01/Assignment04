@@ -27,6 +27,7 @@ public class Question7 {
         int speed = input.nextInt();
        
         int carspeed = speed-limit;
+        
         //See if over limit + fine owed
         if(carspeed<=20 && carspeed>=1){
             System.out.println("You are speeding and for fine is $100.");

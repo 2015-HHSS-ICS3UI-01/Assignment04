@@ -25,7 +25,8 @@ public class Question2 {
 
         //How to calculate inch to cm
         double cm = inch * 2.54;
-
+        
+        //Tell user the conversion
         System.out.println(+inch + " inches is the same as " + cm + " cm.");
 
 

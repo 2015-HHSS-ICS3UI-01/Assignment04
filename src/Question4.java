@@ -18,7 +18,7 @@ public class Question4 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        // Costs for prom
+        // Costs for prom (food,music,renting place,decorations,staff,misc. costs)
         System.out.println("Enter food expenses");
         int food = input.nextInt();
         System.out.println("Enter DJ expenses");
