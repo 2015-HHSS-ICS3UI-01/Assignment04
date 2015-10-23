@@ -61,16 +61,17 @@ public class Question05 {
         System.out.println("Test scores for " + userName + ":");
         System.out.println();
 
-        //calculates percentage of each test
+        //calculates percentage of each test and rounds to nearest whole number
         double firstPercent = firstMark / firstTest * 100;
-
+        firstPercent = Math.round(firstPercent * 10)/10;
         double secondPercent = secondMark / secondTest * 100;
-
+        secondPercent = Math.round(secondPercent * 10)/10;
         double thirdPercent = thirdMark / thirdTest * 100;
-
+        thirdPercent = Math.round(thirdPercent * 10)/10;
         double fourthPercent = fourthMark / fourthTest * 100;
-
+        fourthPercent = Math.round(fourthPercent * 10)/10;
         double fifthPercent = fifthMark / fifthTest * 100;
+        fifthPercent = Math.round(fifthPercent * 10)/10;
         
         //shows user test percentage
         System.out.println("Test 1: " + firstPercent + "%");
