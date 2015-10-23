@@ -16,7 +16,7 @@ public class Question9 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         Scanner in = new Scanner(System.in);
         //make new scanner
 
@@ -24,13 +24,26 @@ public class Question9 {
         //tell the user they are on space number 1
 
         int currentSpace = 1;
-        //set the start space to 1
-        
+        //set current space to 1
+
+        int currentSpace1 = 1;
+        //set the player 1 start space to 1
+
+        int currentSpace2 = 1;
+        //set the player 2 start space to 1
+
         int currentPlayer = 1;
         //set the starting player to player 1
 
         while (true) {
             // loop entire program
+
+            if (currentPlayer == 1) {
+                currentSpace = currentSpace1;
+            } else {
+                currentSpace = currentSpace2;
+            }
+            //set the current space of the player to their respective space
 
             System.out.println("Player " + currentPlayer + " enter sum of dice:");
             //ask user to pick a number between 2-12
@@ -83,19 +96,15 @@ public class Question9 {
                     break;
                     //if the user is on space 100 output "you win!" and terminate
                 }
-            
-            while(true){
-            if(currentPlayer == 1){
-                currentPlayer = 2;
-                break;
-                //if the current player is 1 switch to player 2
-            }
-            if(currentPlayer == 2){
-                currentPlayer = 1;
-                break;
-                //if the current player is 2 switch to player 1
-            }
-            }
+
+
+                if (currentPlayer == 1) {
+                    currentPlayer = 2;
+                    //if the current player is 1 switch to player 2
+                } else {
+                    currentPlayer = 1;
+                    //if the current player is 2 switch to player 1
+                }
             }
         }
     }
