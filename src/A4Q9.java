@@ -29,10 +29,18 @@ public class A4Q9 {
 
         while (p1 != 100 && p2 != 100) {
             if (turn == 1) {
+                
+                //tell layer one to enter the sum of the dice
                 System.out.println("Player 1 enter sum of dice. ");
+                
+                //store the sum in a variable
                 int sum = input.nextInt();
+                
+                //add the sum to the player's position to change position
                 if (sum >= 2 && sum <= 12) {
                     p1 = p1 + sum;
+                    
+                //tell player one the new position
                     System.out.println("You are now on " + p1);
          
 
@@ -69,13 +77,27 @@ public class A4Q9 {
                         p1 = 77;
                         System.out.println("You are now on " + p1);
                     }
+                    
+                    //switch to next player's turn
                     turn = 2;
+                    
+                    //if player quits
+                }else if (sum == 0){
+                    break;
                 }
             }else{
+                
+                //tell player two to enter the sum of dice
                 System.out.println("Player 2 enter sum of dice. ");
+                
+                //store the sum of the dice in a variable
                 int sum = input.nextInt();
+                
+                //add the sum to change position
                 if (sum >= 2 && sum <= 12) {
                     p2 = p2 + sum;
+                
+                //tell player two the new position
                     System.out.println("You are now on " + p2);
 
                     //if user lands on a ladder
@@ -111,9 +133,29 @@ public class A4Q9 {
                         p2 = 77;
                         System.out.println("You are now on " + p2);
                     }
+                    
+                    
+                    
+                    //switch to next player's turn
+                    
                     turn = 1;
-                }
+                  //if player quits
+                }else if (sum == 0){
+                    break;
+            
+            //if player one wins, tell user and stop game
+            }if (p1 == 100){
+                System.out.println("Player one wins!");
+                break;
+                
+            //if player two wins, tell user and stop game    
+            }if (p2 == 100){
+                System.out.println("Player two wins!");
+                break;
             }
         }
+    }
+                //close scanner
+                 input.close();
     }
 }
