@@ -42,8 +42,8 @@ public class Question4 {
         
         // Adding all numbers together to give result
         double total = (prom + dj + rent + decoration + staff + miscellaneous);
-        
-        System.out.println("The total cost is $" + total + ". You will need to sell " + (total/35) + " tickets to break even.");
+       
+        System.out.println("The total cost is $" + total + ". You will need to sell " + Math.ceil(total/35) + " tickets to break even.");
         
         input.close();
         

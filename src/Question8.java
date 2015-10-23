@@ -61,7 +61,7 @@ public class Question8 {
             }if (spot > 100){
                 System.out.println("You Win!");
             }
-            
+            in.close();
             
             
         }

@@ -45,22 +45,26 @@ public class Question6 {
                 
             }    
         
-            
+            //Rounds the plans to accurate measures
         planB = Math.round(planB*100)/100.0;
         planA = Math.round(planA*100)/100.0;
+        // prints out the plans' costs
         System.out.println("Plan A costs "+ planA);
         System.out.println("Plan B costs " + planB);
 
             
         
-        // This is analyzes comparison between both plans
+        // if plan B is cheaper
         if(planA > planB){
             System.out.println("Plan B is cheapest.");
+            // If plan A is cheaper
         }else if(planA < planB){
             System.out.println("Plan A is cheapest");
+            //if they equal each other 
         }if(planA == planB){
             System.out.println("Plan A and B are the same price.");
         }
+        in.close();
     }
 }
 

@@ -45,6 +45,6 @@ public class Question7 {
 
             }
         }
-
+        in.close();
     }
 }

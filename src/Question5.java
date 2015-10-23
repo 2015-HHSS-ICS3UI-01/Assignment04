@@ -55,9 +55,9 @@ public class Question5 {
         System.out.println("What mark did you get?");
         double testr5 = in.nextDouble();
         // Tells the human their percentage of each test they've done
-        System.out.println("Test Scores for " + name + "\nTest 1: " + (testr1/test1*100) + "% \nTest 2: " +(testr2/test2*100)+ "%\nTest 3: " + (testr3/test3*100) + "%\nTest 4: " +(testr4/test4*100)+ "%\nTest 5: " +(testr5/test5*100) + "%" );
+        System.out.println("Test Scores for " + name + "\nTest 1: " + Math.ceil(testr1/test1*100) + "% \nTest 2: " +Math.ceil(testr2/test2*100)+ "%\nTest 3: " + Math.ceil(testr3/test3*100) + "%\nTest 4: " + Math.ceil(testr4/test4*100)+ "%\nTest 5: " +Math.ceil(testr5/test5*100) + "%" );
         // Average of all of tests
-        System.out.println("Average: " + ((testr1/test1*100) + (testr2/test2*100)+ (testr3/test3*100)+ (testr4/test4*100) + (testr5/test5*100))/5 + "%" );
+        System.out.println("Average: " + (Math.ceil((testr1/test1*100) + (testr2/test2*100)+ (testr3/test3*100)+ (testr4/test4*100) + (testr5/test5*100)))/5 + "%" );
        
         in.close();
         
