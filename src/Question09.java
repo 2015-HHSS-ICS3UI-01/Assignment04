@@ -27,7 +27,7 @@ public class Question09 {
         userName = input.next();
         System.out.print("Player Two please enter name: ");
         userName2 = input.next();
-        System.out.println("Welcome " + userName + " " + "and " + userName2 + "!");
+        System.out.println("Welcome " + userName + " and " + userName2 + "!");
         System.out.println("Enter 0 at anytime to quit the game.");
 
         int playerOnePosition = 0;
