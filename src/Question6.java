@@ -31,11 +31,11 @@ public class Question6 {
         System.out.print("Number of weekend minutes?: ");
         int week = input.nextInt();
 
-        //Figure out cost of plan A
         //If number of minutes is less than total, set number of mins to 100
         if (day < 100) {
             day = 100;
         }
+        //Figure out cost of plan A
         double PlanA = (day - 100) * 0.25 + night * 0.15 + week * 0.20;
 
         //Show user results for plan A
@@ -44,11 +44,11 @@ public class Question6 {
         //Round total to two decimal places
         PlanA = Math.round(PlanA * 100) / 100.0;
 
-        //Figure out cost of Plan B
         //If number of minutes is less than total, set number of mins to 250
         if (day < 250) {
             day = 250;
         }
+        //Figure out cost of Plan B
         double PlanB = (day - 250) * 0.45 + night * 0.35 + week * 0.25;
 
         //Round total to two decimal places
@@ -63,6 +63,7 @@ public class Question6 {
         } else {
             System.out.println("Plan B is the cheapest.");
         }
+        //Display to user if they are the same
         if (PlanA == PlanB) {
             System.out.println("Plan A and B cost the same.");
         }
