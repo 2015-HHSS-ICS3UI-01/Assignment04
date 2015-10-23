@@ -29,7 +29,10 @@ public class Question8 {
                 //Get sum of dice
                 System.out.print("Enter sum of dice: ");
                 sum = input.nextInt();
-
+                if (sum <= 1) {
+                    System.out.println("You quit!");
+                    break;
+                }
                 //Check if board is bigger than 100
                 if (board + sum <= 100) {
                     //Add sum of dice to board which gives the position moved to
