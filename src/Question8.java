@@ -23,12 +23,14 @@ public class Question8 {
         //Get user input
         //Create a while loop and if statement to make system repeat itself
         while (true) {
+            //Create sum integer
             int sum = 0;
             //Will repeat until the player reaches space 100
             if (board != 100) {
                 //Get sum of dice
                 System.out.print("Enter sum of dice: ");
                 sum = input.nextInt();
+                //If user enters a number equal to or less than 1, system will print "you quit!" and break.
                 if (sum <= 1) {
                     System.out.println("You quit!");
                     break;
@@ -39,8 +41,11 @@ public class Question8 {
                     board = board + sum;
                     System.out.println("You are now on Square " + board);
                 } else {
+                    //If user exceeds 100 places, the computer will tell them they have exceeded 
+                    //and output their old location (skips over board+sum)
                     System.out.println("You have exceeded 100 places. You are still on square " + board);
                 }
+                //if their sum or boardplace is 100, it will display "congrats you win!" and break
             } else if (board + sum == 100 || board == 100) {
                 System.out.println("Congratulations you win!");
                 break;
