@@ -22,10 +22,8 @@ public class Question2 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        // first ask the measurements that you want to convert
+        // first ask the measurements that you want to convert collecting in inches to collect it
         System.out.print("Please enter the measurement in inches you wish to convert: ");
-        
-        // collecting user measurement in inches
         double inchesMeasurement = input.nextDouble();
         
         // converting user measurement from inches to cm

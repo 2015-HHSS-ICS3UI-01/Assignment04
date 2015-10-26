@@ -24,9 +24,8 @@ public class Question1 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        // get users name by asking them to type it in
+        // get users name by asking them to type it in to collect the name
         System.out.print("Please enter your name: ");
-        // enter name on this line
         String name = input.nextLine();
         
         // respond with saying hellp then the name and then how are you today?

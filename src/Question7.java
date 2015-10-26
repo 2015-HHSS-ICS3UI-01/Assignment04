@@ -23,14 +23,12 @@ public class Question7 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        // ask the speed limit
+        // ask the speed limit and collect the information
         System.out.print("Enter the speed limit: ");
-        // collect speed limit
         double speedLimit = input.nextDouble();
         
-        // ask speed of car
+        // ask speed of car and collect the information
         System.out.print("Enter the recorded speed of the car: ");
-        // collect speed of car
         double speedCar = input.nextDouble();
         
         // create variable for the number of km/h over
@@ -40,28 +38,23 @@ public class Question7 {
         double fine;
         
         // if the speed of the car is over the speedlimit then find the km/h over
-        // and then determine the fine
+        // and then determine the fine to display the outcome
         if(speedCar > speedLimit){
             // determine how much is the car speed oover the speed limit
             speedOver = speedCar - speedLimit;
             // if the speed over is between 1 and 20 the fine is therefore $100
             if(speedOver >= 1.0 && speedOver <= 20.0){
-                // fine $100
                 fine = 100.0;
             // if the speed over is between 21 and 30 the fine is therefore $270
             } else if (speedOver >= 21.0 && speedOver <= 30.0){
-                // fine $270
                 fine = 270.0;
             // if the speed over is between 31 and over the fine is therefore $500
             } else {
-                // fine $500
                 fine = 500.0;
             }
-            // display the outcome which is the amount of the fine
             System.out.println("You are speeding a your fine is $" + fine + ".");
         // if the speed of the car is within the speed limit than tell the driver they are within the limit
         } else {
-            // display the outcome which is that they are within the limit
             System.out.println("Congratulations, you are within the speed limt!");
         }
         // close input scanner

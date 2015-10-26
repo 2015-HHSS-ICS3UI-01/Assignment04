@@ -21,18 +21,15 @@ public class Question3 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        // tell the user to enter the numbers
+        // tell the user to enter 4 different numbers on 4 different lines to collect them
         System.out.println("Please enter in 4 numbers on seperate lines:");
-        
-        // collect the 4 different numbers on 4 different lines
         double numberOne = input.nextDouble();
         double numberTwo = input.nextDouble();
         double numberThree = input.nextDouble();
         double numberFour = input.nextDouble();
         
         // display the numbers on a line together
-        System.out.println("Your numbers were " + numberOne + ", " 
-                + numberTwo + ", " + numberThree + ", and " + numberFour);
+        System.out.println("Your numbers were " + numberOne + ", " + numberTwo + ", " + numberThree + ", and " + numberFour);
         
         // close input scanner
         input.close();
