@@ -16,7 +16,7 @@ public class Question9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create a program to preform the game of Snakes and Ladders
+        // create a program to preform the game of snakes and ladders
         // keeping in mind the different methods of playing the game
         // the first player to reach the 100th square has won the game and the other player has lost
         
