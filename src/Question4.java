@@ -50,7 +50,7 @@ public class Question4 {
         double total = dj + hall + decoration + staff + miscellaneous;
 
         double amount = total / 35;
-
-        System.out.println("The total cost is " + total + " you will need to sell " + amount + " to break even");
+        amount = Math.ceil(amount);
+        System.out.println("The total cost is " + total + " you will need to sell " + amount + "  tickets to break even");
     }
 }
