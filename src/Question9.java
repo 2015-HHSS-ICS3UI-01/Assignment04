@@ -121,8 +121,8 @@ public class Question9 {
                 System.out.println("Nope, Reroll");
                 player2 = player2 - sum;
             }
-            in.close();
-        }
 
+        }
+        in.close();
     }
 }
