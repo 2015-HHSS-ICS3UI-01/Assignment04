@@ -17,14 +17,14 @@ public class Question1 {
      */
     public static void main(String[] args) {
 
-        //
+        //create scanner
         Scanner userInput = new Scanner(System.in);
-        
+        //request name from user
         System.out.println("Enter your name please.");
-        
+        //attach name inputed to variable 'name'
         String name = userInput.nextLine();
-        
+
         System.out.println("Hello " + name + ". How are you?");
-        
+
     }
 }
