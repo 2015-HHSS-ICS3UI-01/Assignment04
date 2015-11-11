@@ -86,7 +86,7 @@ public class A4Q8 {
                 //"Location" now equals 19
                 Location = 19;
             }
-            //if Location is equal to 90, the following commands will be executed
+            //if Location is equal to 90, 
             if (Location == 90) {
                 //makes the computer display "You hit a snake and went back to Location 48!" on the screen
                 System.out.println("A snake ate you , you are now on space 48!");
@@ -122,7 +122,7 @@ public class A4Q8 {
                 //breaks the program out of the while loop
                 break;
             }
-            //if rolldice is less than or equal to 13, the following commands will be executed
+            //if rolldice is less than or equal to 13, 
             if (rolldice >= 13) {
                 //makes the computer display "You Quit! Player 1 Wins!" on the screen
                 System.out.println("You Quit! Player 1 Wins!");
@@ -130,7 +130,7 @@ public class A4Q8 {
                 break;
             }
             //if rolldice is less than or equal to 12, more than or equal to 2, 
-            //and if Location is less than or equal to 100 the following commands will be executed
+            //and if Location is less than or equal to 100 
             if (roll >= 2) {
                 if (roll <= 12) {
                     if (square <= 100) {
