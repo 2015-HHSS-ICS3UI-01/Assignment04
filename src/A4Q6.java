@@ -30,7 +30,7 @@ public class A4Q6 {
 
         //Calculate Plan A
         double DaytimeA = 0;
-        if (day > 100);
+        if (day > 100)
         {
             DaytimeA = (day - 100) * .25;
         }
