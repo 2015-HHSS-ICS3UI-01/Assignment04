@@ -75,7 +75,6 @@ public class A4Q9 {
                 spot2 = 86;
                 System.out.println("You went up a ladder! You're now on space " + spot2);
             }
-// FIX HERE
             if (spot2 == 90) {
                 spot2 = 48;
                 System.out.println("You slid down a snake. You're now on space " + spot2);
