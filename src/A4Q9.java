@@ -52,6 +52,9 @@ public class A4Q9 {
                 spot1 = 77;
                 System.out.println("You slid down a snake. You're now on space " + spot1);
             }
+            if (spot1 > 100) {
+                spot1 = 100;
+            }
             
             // player 2
             System.out.println("PLAYER 2: Roll the dice. What was your roll?");
@@ -82,6 +85,9 @@ public class A4Q9 {
             if (spot2 == 99) {
                 spot2 = 77;
                 System.out.println("You slid down a snake. You're now on space " + spot2);
+            }
+            if (spot2 > 100) {
+                spot2 = 100;
             }
             
             // roll exceptions
