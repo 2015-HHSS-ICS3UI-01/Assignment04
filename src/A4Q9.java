@@ -26,8 +26,14 @@ public class A4Q9 {
             System.out.println("PLAYER 1: Roll the dice. What was your roll?");
             int roll1 = input.nextInt();
             spot1 = spot1 + roll1;
+            // invalid roll
+            if (spot1 > 100) {
+                spot1 = spot1 - roll1;
+                System.out.println("Invalid roll. Miss a turn.");
+            } else {
             System.out.println("You're now on space " + spot1 + ".");
-
+            }
+            
             if (spot1 == 9) {
                 spot1 = 34;
                 System.out.println("You went up a ladder! You're now on space " + spot1);
@@ -52,15 +58,17 @@ public class A4Q9 {
                 spot1 = 77;
                 System.out.println("You slid down a snake. You're now on space " + spot1);
             }
-            if (spot1 > 100) {
-                spot1 = 100;
-            }
             
             // player 2
             System.out.println("PLAYER 2: Roll the dice. What was your roll?");
             int roll2 = input.nextInt();
             spot2 = spot2 + roll2;
-            System.out.println("You're now on space " + spot2);
+            if (spot2 > 100) {
+                spot2 = spot2 - roll2;
+                System.out.println("Invalid roll. Miss a turn.");
+            } else {
+            System.out.println("You're now on space " + spot2 + ".");
+            }
 
             if (spot2 == 9) {
                 spot2 = 34;
@@ -86,9 +94,6 @@ public class A4Q9 {
                 spot2 = 77;
                 System.out.println("You slid down a snake. You're now on space " + spot2);
             }
-            if (spot2 > 100) {
-                spot2 = 100;
-            }
             
             // roll exceptions
             if (roll1 < 2 || roll1 > 12) {
@@ -101,7 +106,7 @@ public class A4Q9 {
             }
             
             // finishing
-            if (spot1 == 100) {
+            if (spot1 == 100) { // FIX THIS
                 System.out.println("PLAYER 1 Wins!");
                 done = true;
             } else if (spot2 == 100) {
