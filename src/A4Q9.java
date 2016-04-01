@@ -44,6 +44,8 @@ public class A4Q9 {
                             player1 = player1 - 42;
                         } else if (player1 == 99) {
                             player1 = player1 - 22;
+                        } else if (player1 >= 100) {
+                            player1 = 100;
                         }
                         System.out.println("You are now on square " + player1);
                     }
@@ -54,7 +56,11 @@ public class A4Q9 {
                 }
 
                 break;
+            }if (player1 >= 100) {
+                System.out.println("Player 1 Win!");
+                break;
             }
+            
 
 
             while (player2 > 0) {
@@ -80,6 +86,8 @@ public class A4Q9 {
                             player1 = player2 - 42;
                         } else if (player2 == 99) {
                             player2 = player2 - 22;
+                        } else if (player2 >= 100) {
+                            player2 = 100;
                         }
                         System.out.println("You are now on square " + player2);
                     }
@@ -95,10 +103,7 @@ public class A4Q9 {
             if (player2 >= 100) {
                 System.out.println("Player 2 Win!");
                 break;
-            } else if (player1 >= 100) {
-                System.out.println("Player 1 Win!");
-                break;
-            }
+            } 
         }
     }
 }
