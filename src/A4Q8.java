@@ -38,6 +38,8 @@ public class A4Q8 {
                         player1 = player1 - 42;
                     } else if (player1 == 99) {
                         player1 = player1 - 22;
+                    }else if (player1 >=100){
+                        player1 = 100;
                     }
                     System.out.println("You are now on square " + player1);
                 }
