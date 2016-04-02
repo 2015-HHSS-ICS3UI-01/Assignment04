@@ -18,10 +18,10 @@ public class A4Q1 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         String name;
-        
+
         System.out.println("Please enter your name.");
         name = input.nextLine();
 
-        System.out.println("Hello " + name);
+        System.out.println("Hello " + name + ". How are you today?");
     }
 }

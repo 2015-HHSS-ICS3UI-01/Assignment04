@@ -39,15 +39,14 @@ public class A4Q6 {
         }
         double B = dayB + (even * 0.35) + (week * 0.25);
 
-
-        System.out.println("Plan A costs " + A);
-        System.out.println("Plan B costs " + B);
+        System.out.println("Plan A costs $" + A + ".");
+        System.out.println("Plan B costs $" + B + ".");
         if (A == B) {
-            System.out.println("Plan A and B are the same price");
+            System.out.println("Plan A and B are the same price.");
         } else if (A > B) {
-            System.out.println("Plan B is cheaper");
+            System.out.println("Plan B is cheapest.");
         } else if (B > A) {
-            System.out.println("Plan A is cheaper");
+            System.out.println("Plan A is cheapest.");
         }
     }
 }

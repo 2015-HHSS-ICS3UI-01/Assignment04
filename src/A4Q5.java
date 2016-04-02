@@ -58,7 +58,7 @@ public class A4Q5 {
         double fifth = (double) (five / del * 100);
 
         //Printing all test averages in chronilogical order
-        System.out.println("Test scores for " + name + " are the following");
+        System.out.println("Test scores for " + name + " are the following.");
         System.out.println("" + first);
         System.out.println("" + second);
         System.out.println("" + third);
@@ -69,6 +69,6 @@ public class A4Q5 {
         double average = (double) ((first + second + third + fourth + fifth) / 5);
 
         //Final statement stating the users final average of all tests
-        System.out.println("Your average is " + average);
+        System.out.println("Your average is " + average + ".");
     }
 }

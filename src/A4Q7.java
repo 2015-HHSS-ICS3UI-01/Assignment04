@@ -28,20 +28,13 @@ public class A4Q7 {
 
         //GET EQUAL TO AS WELL AND CHECK INT NAMES
         if (speed >= 1 && over <= 20) {
-            System.out.println("You are speeding. Your fine is $100");
-        }
-
-        if (speed >= 21 && over <= 30) {
-            System.out.println("You are speeding. Your fine is $270");
-        }
-
-        if (over >= 31) {
-            System.out.println("You are speeding. Your fine is $500");
-        }
-
-        if (speed <= limit) {
+            System.out.println("You are speeding. Your fine is $100!");
+        } else if (speed >= 21 && over <= 30) {
+            System.out.println("You are speeding. Your fine is $270!");
+        } else if (over >= 31) {
+            System.out.println("You are speeding. Your fine is $500!");
+        } else if (speed <= limit) {
             System.out.println("Congradulation, you are within the speed limit!");
         }
-
     }
 }

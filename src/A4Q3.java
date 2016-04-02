@@ -24,6 +24,6 @@ public class A4Q3 {
         double second = input.nextDouble();
         double third = input.nextDouble();
         double fourth = input.nextDouble();
-        System.out.println("Your numbers are " + first + ", " + second + ", " + third + ", and " + fourth);
+        System.out.println("Your numbers are " + first + ", " + second + ", " + third + ", and " + fourth + ".");
     }
 }

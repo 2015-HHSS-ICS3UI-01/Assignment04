@@ -36,8 +36,9 @@ public class A4Q4 {
         System.out.println("How much for miscellaneous cost?");
         double other = input.nextDouble();
 
-        double cost = (double) (food + dj + hall + decoration + staff + other);
+        double cost = (double) ((food + dj + hall + decoration + staff + other));
+        double ticket = (double) ((food + dj + hall + decoration + staff + other) / 35);
+        System.out.println("Your total cost will be $" + Math.ceil(cost) + ". You will need to sell " + Math.ceil(ticket) + " tickets.");
 
-        System.out.println("Your total cost will be " + cost);
     }
 }
