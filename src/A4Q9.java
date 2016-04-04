@@ -33,7 +33,13 @@ public class A4Q9 {
             } else {
             System.out.println("You're now on space " + spot1 + ".");
             }
-            
+            // FINISHING
+            if (spot1 == 100) { 
+                System.out.println("PLAYER 1 Wins!");
+                done = true;
+            }
+                
+            // Snakes or Ladder Spots
             if (spot1 == 9) {
                 spot1 = 34;
                 System.out.println("You went up a ladder! You're now on space " + spot1);
@@ -60,6 +66,9 @@ public class A4Q9 {
             }
             
             // player 2
+            if (spot1 == 100) {
+                done = true;
+            } else if (spot1 != 100) {
             System.out.println("PLAYER 2: Roll the dice. What was your roll?");
             int roll2 = input.nextInt();
             spot2 = spot2 + roll2;
@@ -69,7 +78,12 @@ public class A4Q9 {
             } else {
             System.out.println("You're now on space " + spot2 + ".");
             }
-
+            // FINISHING
+            if (spot2 == 100) { 
+                System.out.println("PLAYER 2 Wins!");
+                done = true;
+                
+            // Snakes or Ladder Spaces
             if (spot2 == 9) {
                 spot2 = 34;
                 System.out.println("You went up a ladder! You're now on space " + spot2);
@@ -104,15 +118,9 @@ public class A4Q9 {
                 System.out.println("You Quit!");
                 done = true;
             }
-            
-            // finishing
-            if (spot1 == 100) { // FIX THIS
-                System.out.println("PLAYER 1 Wins!");
-                done = true;
-            } else if (spot2 == 100) {
-                System.out.println("PLAYER 2 Wins!");
-                done = true;
-            }
-        }
+      }
     }
+  }
+ }
 }
+// stop if player 1 wins FIX FIX
