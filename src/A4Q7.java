@@ -19,22 +19,22 @@ public class A4Q7 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter the speed limit.");
-        double limit = input.nextDouble();
+        int limit = input.nextInt();
 
         System.out.println("Enter the recorded speed of the car.");
-        double speed = input.nextDouble();
+        int speed = input.nextInt();
 
-        double over = speed - limit;
+        int answer = limit - speed;
 
-        //GET EQUAL TO AS WELL AND CHECK INT NAMES
-        if (speed >= 1 && over <= 20) {
-            System.out.println("You are speeding. Your fine is $100!");
-        } else if (speed >= 21 && over <= 30) {
-            System.out.println("You are speeding. Your fine is $270!");
-        } else if (over >= 31) {
-            System.out.println("You are speeding. Your fine is $500!");
-        } else if (speed <= limit) {
+        //CHECK INT NAMES
+        if (answer <= 0) {
             System.out.println("Congradulation, you are within the speed limit!");
+        } else if (answer >= 1 && answer <= 20) {
+            System.out.println("You are speeding. Your fine is $100!");
+        } else if (answer >= 21 && answer <= 30) {
+            System.out.println("You are speeding. Your fine is $270!");
+        } else if (answer >= 31) {
+            System.out.println("You are speeding. Your fine is $500!");
         }
     }
 }
