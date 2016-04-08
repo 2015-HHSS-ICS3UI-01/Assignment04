@@ -55,7 +55,6 @@ public class A4Q9 {
             } else {
                 System.out.println("Player 1, you are now on square " + location + ".");
 
-
                 //Encounters with snakes and ladder
                 if (location == 54) {
                     location = 19;
@@ -77,8 +76,6 @@ public class A4Q9 {
                     location = 86;
                     System.out.println("Player 1, you've climbed a ladder! You have landed on square 86.");
                 }
-
-
 
                 //Player 2
                 System.out.println("Player 2, enter sum of dice.");
@@ -112,7 +109,6 @@ public class A4Q9 {
                     done = true;
                 } else {
                     System.out.println("Player 2, you are now on square " + location2 + ".");
-
 
                     //Encounters with snakes and ladder
                     if (location2 == 54) {

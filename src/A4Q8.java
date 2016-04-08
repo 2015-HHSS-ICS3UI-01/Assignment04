@@ -53,7 +53,6 @@ public class A4Q8 {
             } else {
                 System.out.println("You are now on square " + location + ".");
 
-
                 //Encounters with snakes and ladder
                 if (location == 54) {
                     location = 19;

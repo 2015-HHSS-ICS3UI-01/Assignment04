@@ -38,10 +38,10 @@ public class A4Q6 {
             dayB = 0;
         }
         double B = dayB + (even * 0.35) + (week * 0.25);
-        
-        A = Math.round(A*100)/100.0;
-        B = Math.round(B*100)/100.0;
-        
+
+        A = Math.round(A * 100) / 100.0;
+        B = Math.round(B * 100) / 100.0;
+
         System.out.println("Plan A costs $" + A + ".");
         System.out.println("Plan B costs $" + B + ".");
         if (A == B) {

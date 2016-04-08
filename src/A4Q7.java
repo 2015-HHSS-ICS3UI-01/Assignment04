@@ -20,18 +20,16 @@ public class A4Q7 {
 
         System.out.println("Enter the speed limit.");
         int limit = input.nextInt();
-
         System.out.println("Enter the recorded speed of the car.");
         int speed = input.nextInt();
 
-        int answer = limit - speed;
+        int answer = speed - limit;
 
-        //CHECK INT NAMES
         if (answer <= 0) {
             System.out.println("Congradulation, you are within the speed limit!");
-        } else if (answer >= 1 && answer <= 20) {
+        } else if (1 <= answer && answer <= 20) {
             System.out.println("You are speeding. Your fine is $100!");
-        } else if (answer >= 21 && answer <= 30) {
+        } else if (21 <= answer && answer <= 30) {
             System.out.println("You are speeding. Your fine is $270!");
         } else if (answer >= 31) {
             System.out.println("You are speeding. Your fine is $500!");
