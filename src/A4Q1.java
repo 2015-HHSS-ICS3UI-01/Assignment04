@@ -19,9 +19,11 @@ public class A4Q1 {
         Scanner input = new Scanner(System.in);
         String name;
 
+        // Ask the user their name
         System.out.println("Please enter your name.");
         name = input.nextLine();
 
+        // Ouput saying Hello
         System.out.println("Hello " + name + ". How are you today?");
     }
 }

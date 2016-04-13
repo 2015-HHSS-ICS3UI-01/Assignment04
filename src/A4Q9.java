@@ -21,13 +21,13 @@ public class A4Q9 {
         int location2 = 1;
         boolean done = false;
 
-        //Player 1
+        // Player 1
         while (true) {
-            System.out.println("Player 1, enter sum of dice.");
+            System.out.println("Player 1, enter the sum of the dice.");
             int dice = input.nextInt();
             location = location + dice;
 
-            //Exceeding/equal/invalid numbers
+            // Exceeding/equal/invalid numbers
             if (location > 100) {
                 System.out.println("Player 1, sorry, you exceeded 100 squares. You are now at the 80th square.");
                 if (location >= 100) {
@@ -39,14 +39,14 @@ public class A4Q9 {
                 break;
             }
             if (dice < 2) {
-                System.out.println("Player 1, you Quit! Player 2, you have won!");
+                System.out.println("Player 1, you quit! Player 2, you have won!");
                 break;
             }
             if (dice >= 13) {
-                System.out.println("Player 1, your input is wrong. Please try again next turn.");
+                System.out.println("Player 1, your input is incorrect. Please try again next turn.");
                 location = location - dice;
             } else if (dice == 0) {
-                System.out.println("Player 1, you Quit! Player 2, you have won!");
+                System.out.println("Player 1, you quit! Player 2, you have won!");
                 break;
             }
 
@@ -55,7 +55,7 @@ public class A4Q9 {
             } else {
                 System.out.println("Player 1, you are now on square " + location + ".");
 
-                //Encounters with snakes and ladder
+                // Encounters with snakes and ladders
                 if (location == 54) {
                     location = 19;
                     System.out.println("Player 1, you've been eaten by a snake! Yikes! You've descended to square 19.");
@@ -77,12 +77,12 @@ public class A4Q9 {
                     System.out.println("Player 1, you've climbed a ladder! You have landed on square 86.");
                 }
 
-                //Player 2
-                System.out.println("Player 2, enter sum of dice.");
+                // Player 2
+                System.out.println("Player 2, enter the sum of the dice.");
                 int dice2 = input.nextInt();
                 location2 = location2 + dice2;
 
-                //Exceeding/equal/invalid numbers
+                // Exceeding/equal/invalid numbers
                 if (location2 > 100) {
                     System.out.println("Player 2, sorry, you exceeded 100 squares. You are now at the 80th square.");
                     if (location2 >= 100) {
@@ -95,14 +95,14 @@ public class A4Q9 {
                 }
 
                 if (dice2 < 2) {
-                    System.out.println("Player 2, you Quit! Player 1, you have won!");
+                    System.out.println("Player 2, you quit! Player 1, you have won!");
                     break;
                 }
                 if (dice2 >= 13) {
-                    System.out.println("Player 2, your input is wrong. Please try again next turn.");
+                    System.out.println("Player 2, your input is incorrect. Please try again next turn.");
                     location2 = location2 - dice2;
                 } else if (dice2 == 0) {
-                    System.out.println("Player 2, you Quit! Player 1, you have won!");
+                    System.out.println("Player 2, you quit! Player 1, you have won!");
                     break;
                 }
                 if (location == 100) {
@@ -110,7 +110,7 @@ public class A4Q9 {
                 } else {
                     System.out.println("Player 2, you are now on square " + location2 + ".");
 
-                    //Encounters with snakes and ladder
+                    // Encounters with snakes and ladders
                     if (location2 == 54) {
                         location2 = 19;
                         System.out.println("Player 2, you've been eaten by a snake! Yikes! You've descended to square 19.");

@@ -42,6 +42,7 @@ public class A4Q6 {
         A = Math.round(A * 100) / 100.0;
         B = Math.round(B * 100) / 100.0;
 
+        // Output of which plan is cheaper
         System.out.println("Plan A costs $" + A + ".");
         System.out.println("Plan B costs $" + B + ".");
         if (A == B) {

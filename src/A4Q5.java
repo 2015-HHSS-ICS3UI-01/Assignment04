@@ -32,43 +32,43 @@ public class A4Q5 {
         // Second test average 
         System.out.println("What was the second test out of?");
         double lock = input.nextDouble();
-        System.out.println("What is your mark?");
+        System.out.println("What mark did you get?");
         double two = input.nextDouble();
         double second = (double) (two / lock * 100);
 
         // Third test average
         System.out.println("What was the third test out of?");
         double home = input.nextDouble();
-        System.out.println("What was your mark?");
+        System.out.println("What mark did you get?");
         double three = input.nextDouble();
         double third = (double) (three / home * 100);
 
-        //Fourth test average 
+        // Fourth test average 
         System.out.println("What was the fourth test out of?");
         double end = input.nextDouble();
-        System.out.println("What was your mark?");
+        System.out.println("What mark did you get?");
         double four = input.nextDouble();
         double fourth = (double) (four / end * 100);
 
-        //Fifth test average
+        // Fifth test average
         System.out.println("What was the fifth test out of?");
         double del = input.nextDouble();
-        System.out.println("What was your mark?");
+        System.out.println("What mark did you get?");
         double five = input.nextDouble();
         double fifth = (double) (five / del * 100);
 
-        //Printing all test averages in chronilogical order
+        // Output all test averages in chronilogical order
         System.out.println("Test scores for " + name + " are the following:");
-        System.out.println("" + first + "%");
-        System.out.println("" + second + "%");
-        System.out.println("" + third + "%");
-        System.out.println("" + fourth + "%");
-        System.out.println("" + fifth + "%");
+        System.out.println("Test 1: " + first + "%");
+        System.out.println("Test 2: " + second + "%");
+        System.out.println("Test 3: " + third + "%");
+        System.out.println("Test 4: " + fourth + "%");
+        System.out.println("Test 5: " + fifth + "%");
 
-        //Average of all averages calculated BEDMASS
+        // Average of all averages calculated (BEDMASS)
         double average = (double) ((first + second + third + fourth + fifth) / 5);
 
-        //Final statement stating the users final average of all tests
+        // Final statement stating the users final average of all tests
         System.out.println("Your average is " + average + "%.");
     }
 }

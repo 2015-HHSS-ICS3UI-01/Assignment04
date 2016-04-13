@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class A4Q8 {
 
     /**
-     * @param args the command line arguments
+     * @aram args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
@@ -25,7 +25,7 @@ public class A4Q8 {
             int dice = input.nextInt();
             location = location + dice;
 
-            //Exceeding/equal/invalid numbers
+            // Exceeding/equal/invalid numbers
             if (location > 100) {
                 System.out.println("Sorry, you exceeded 100 squares. You are now at the 80th square.");
                 if (location >= 100) {
@@ -53,7 +53,7 @@ public class A4Q8 {
             } else {
                 System.out.println("You are now on square " + location + ".");
 
-                //Encounters with snakes and ladder
+                // Encounters with snakes and ladder
                 if (location == 54) {
                     location = 19;
                     System.out.println("You've been eaten by a snake! Yikes! You've descended to square 19.");
