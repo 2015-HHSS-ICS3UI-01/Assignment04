@@ -1,0 +1,8 @@
+System.out.print in()
+System.out.print()
+
+System.out.print in("Hello")
+System.out.print in("World")
+
+import java.util.*;
+
